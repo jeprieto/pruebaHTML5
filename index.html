@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Mantengo comentado el código original.
 <html>
 <head>
 <title>Prueba</title>
@@ -12,4 +13,163 @@
 
 <script src="javascript/codigo.js"></script>
 </body>
+</html>
+-->
+<html>
+	<head>
+		<title>Curso HTML5</title>
+		<meta charset = "utf-8"> 
+		<meta name="autor" content="Enrique Prieto">
+	<!--<base href="C:\Users\Quique\Documents\Futuro\Formación\HTML5\CursoHTML5_021307\Trabajo">
+	     <base  href= ".">
+	 -->
+		<link  rel="stylesheet" href="estilo.css" title="estilo">
+	</head>
+	<body>
+		<header>
+			<h1>Curso HTML5</h1>
+			<img scr="HTML5.png" alt="Logo de HTML5">
+		</header>
+		
+		<section id="Estructura">	
+		
+		 <h3>Estructura</h3>
+			&#x3C;html&#x3E; <br>
+			&#x20;&#x3C;head&#x3E; <br>
+			&#x3C;/head&#x3E; <br>
+			&#x3C;body&#x3E; <br>
+			&#x3C;/body&#x3E; <br>
+			<!--
+			"   <head>"
+			"      ...metadatos"
+			"   </head>"
+			"   <body>"
+			"      ...contenido"
+			"   </body>"
+			"</html>"
+			-->
+		</section>
+			
+		<section id="Cabecera">	
+		 <h3>head </h3>
+		 <p>Especifica metadatos</p>
+			
+		 <table>
+			<caption> CABECERA </caption>
+			<tr><th>Elemento</th>	<th>Definición</th></tr>
+			<tr><td>title</td>		<td>Indica título</td></tr>
+			<tr><td>meta</td>		<td>Permite incorporar metadatos</td></tr>
+			<tr><td>link</td>		<td>Permite enlazar a otros recursos</td></tr>
+			<tr><td>style</td>		<td>Permite incrustar declaraciones de estilo</td></tr>
+			<tr><td>base</td>		<td>Permite especificar la URI de base</td></tr>
+			<tr><td>command</td></tr>	
+			<tr><td>script</td>		<td>Permite añadir interactividad</td></tr>
+			<tr><td>noscript</td></tr>
+		 </table>
+		</section>
+		
+		<section id="Cuerpo">
+		 <h3>Cuerpo</h3>
+		 <table>
+			<caption> CUERPO </caption>
+			<tr><th>Elemento</th>	<th>Definición</th></tr>
+			<tr><td>body</td>		<td>Especifica el contenido del documento</td></tr>
+			<tr><td>Elementod de Estructura</td>	
+									<td> Para establecer la estructura semática del documento</td></tr>
+			<tr><td>hi, h2,...h6</td>	
+									<td>Títulos</td></tr>
+			<tr><td>div</td>		<td>Agrupa elementos de contenido</td></tr>
+			<tr><td>sectión</td>	<td>Sección, puede incluir encabezados</td></tr>
+			<tr><td>article</td>	<td>Artículo</td></tr>
+			<tr><td>hgroup</td>		<td>Grupo de cabecera</td></tr>
+			<tr><td>nav</td>		<td>Listas de navegación</td></tr>
+			<tr><td>aside</td>		<td>Contenido auxiliar</td></tr>
+			<tr><td>header</td>		<td>Cabecera</td></tr>
+			<tr><td>footer</td>		<td>Pie</td></tr>
+			<tr><td>address</td>	<td>Define datos de contacto</td></tr>
+			<tr><td>figure</td>		<td>Figuras</td></tr>
+			<tr><td>details</td>	<td>Detalles opcionales</td>
+									<td><details> 
+											<sumary> Explicación adicional </sumary>
+											El div se utliza para agrupar contenido. 
+											class, id, lang, etc. permiten seleccionar grupos div 
+										</details></td></tr>
+		 </table>	
+		</section>	
+		
+		<section id="Agrupacion">
+		 <h3> Agrupacion </h3>
+		 <table>
+			<caption> AGRUPACION </caption>
+			<tr><th>Elemento</th>		<th>Definición</th></tr>	
+			<tr><td>p</td>				<td>párrafo.</th></tr>
+			<tr><td>ol, ul, li</td>		<td>listas de ítems</th></tr>
+			<tr><td>dt,dl,dd</td>		<td>definiciones</th></tr>
+			<tr><td>pre</td> 			<td>texto preformateado</th></tr>
+			<tr><td>blockquote</td>		<td>contenido extraido de otra fuente</th></tr>
+			<tr></tr>
+			<tr><td>figure</td>			<td>representa el contenido</th></tr>
+			<tr><td>figcaption</td>		<td>representa la leyenda de la figura</th></tr>
+			<tr></tr>
+			<tr><td>details</td>		<td>Contenido que pues estar oculto</th></tr>
+		 </table>	
+		</section>
+		
+		<section id=Textuales>
+		 <h3> Elementos textuales </h3>
+		 <table>
+			<caption> ELEMENTOS TEXTUALES </caption>
+			<tr><th>Elemento</th>	<th>Definición</th>			<th>Ejemplo</th>
+			<tr><td>em</td>			<td>Énfasis</td>			<td>Esta bebida me parece <em>espectacular"</em></td>
+			<tr><td>strong</td>		<td>Importante</td>			<td>La leche está <strong>muy caliente</strong></td>
+			<tr><td>small</td>		<td>No importante</td>		<td>Tome Exidina <small>Este medicamento...</small></td>
+			<tr><td>s</td>			<td>Incorrecto</td>			<td>Precio: <s>10 euros</s>. 9,95 euros</td>
+			<tr><td>cite</td>		<td>Títulos de obras</td>	<td>En <cite>El Quijote</cite> hay 2 protagonistas.</td>
+			<tr><td>q</td>			<td>Citas</td>				<td>Juan dijo <q>Bien predica quien bien vive</td>
+			<tr><td>abbr</td>		<td>Abreviación</td>		<td>Un <dfn>catamorfismo</dfn>es un tipo de functor</td>
+			<tr><td>span</td>		<td>Texto diferente</td>	<td>Castillo en francés es <spanlang="fr">château</span></td>
+			<tr><td>br</td>			<td>Salto de línea</td>		<td>C/Valdés Salas, S/N<br>Oviedo<br>España</td>
+			<tr><td>wbr</td>		<td>Posible salto</td>		<td>super<wbr>cali<wbr>frasti<wbr>listico.com</td>
+			<tr><td>code</td>		<td>Código</td>				<td><code>checkDB</code> chequea la base de datos.</td>
+			<tr><td>var</td>		<td>Variable</td>			<td>Sea <var>n </var>el número de personas, ...</td>
+			<tr><td>samp</td>		<td>Muestra, Salida</td>	<td>La salida es: <samp>Syntax error</samp></td>
+			<tr><td>kbd</td>		<td>Entrada teclado</td>	<td>Pulse <kbd>F1</kbd> para obtener ayuda</td>
+			<tr><td>sub</td>		<td>Subíndice</td>			<td>El agua es H<sub>2</sub>O</td>
+			<tr><td>sup</td>		<td>Superíndice</td>		<td>El cuadrado es <var>x<sup>2</sup></var></td>
+			<tr><td>i</td>			<td>Voz alternativa</td>	<td>Es un <i>poquillo</i> trasto</td>
+			<tr><td>b</td>			<td>Palabras clave</td>		<td>Contiene <b>salmón</b>y <b>tomate</b></td>
+			<tr><td>u</td>			<td>Anotaciones</td>		<td>Escribe <u>lopo</u> en vez de <b>lobo</b></td>
+			<tr><td>ins</td>		<td>Texto insertado</td>	<td><ins>Texto insertado</ins></td>
+			<tr><td>del</td>		<td>Texto borrado</td>		<td><del>Texto eliminado</del></td>
+			<tr><td>mark</td>		<td>Texto Resaltado<br> Ej. tras una búsqueda</td>	<td>El <mark>lobo</mark> ibérico.<br>Los <mark>lobo</mark>s son animales</td>
+			<tr><td>data</td>		<td>Dato</td>				<td>Juan sacó un <datavalue="10">diez</data>.</td>
+			<tr><td>time</td>		<td>Evento temporal <br>datetime indica instante</td>	
+																<td>Nos vemos el <timedatetime="2012-04-01">sábado</time></td>
+		 </table>
+		</section>
+		
+		
+		<section id=Tablas>
+		 <h3> Tablas </h3>
+		 <table>
+			<caption> TABLAS </caption>
+			<tr><th>Elemento</th>	<th>Definición</th></tr>
+			<tr><td>table</th>		<th>Una tabla</td></tr>
+			<tr><td>caption</td>	<td>Leyenda de la tabla</td></tr>
+			<tr><td>tr</td>			<td>Fila</td></tr>
+			<tr><td>th</td>			<td>Celdade cabecera</td></tr>
+			<tr><td>td</td>			<td>Celda de datos</td></tr>
+			<tr><td>colgroup</td>	<td>Grupo de columnas</td></tr>
+			<tr><td>col</td>		<td>Representa una columna dentro de un colgroup</td></tr>
+			<tr><td>tbody</td>		<td>Cuerpo de la tabla</td></tr>
+			<tr><td>thead</td>		<td>Cabecera de la tabla</td></tr>
+			<tr><td>tfoot</td>		<td>Pie de tabla</td></tr>
+		 </table>
+		</section>
+		
+		<footer>
+			Autor: Enrique Prieto (Agosto 2013)
+		</footer>
+			
+	</body>
 </html>
