@@ -1,6 +1,25 @@
 body { color: blue; }
 
 h3 {
-   color : blue;
-   background-color : yellow ;
+	border-radius: 10px 10px 10px 10px;;
+	color: blue;
+	background-color: yellow;
+}
+
+.par1 {
+	margin-left: 1em;
+}
+.par2 {
+	margin-left: 2em;
+}
+.par3 {
+	margin-left: 3em;
+}
+
+table {
+	border-style: solid;
+}
+
+td {
+	border-style: groove;
 }

@@ -18,7 +18,8 @@
 <html>
 	<head>
 		<title>Curso HTML5</title>
-		<meta charset = "utf-8"> 
+		<!-- Parece que no muestar bien los caracteres especiales
+			<meta charset = "utf-8"> -->
 		<meta name="autor" content="Enrique Prieto">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css" >
 		<script src="javascript/codigo.js"></script>
@@ -26,17 +27,20 @@
 	<body>
 		<header>
 			<h1>Curso HTML5</h1>
-			<img scr="HTML5.jpg" alt="Logo de HTML5">
+			<img src="imagenes/HTML5.jpg" alt="Logo de HTML5">
 		</header>
 		
 		<section id="Estructura">	
 		
 		 <h3>Estructura</h3>
-			&#x3C;html&#x3E; <br>
-			&#x20;&#x3C;head&#x3E; <br>
-			&#x3C;/head&#x3E; <br>
-			&#x3C;body&#x3E; <br>
-			&#x3C;/body&#x3E; <br>
+			<p class="par1"> &#x3C;html&#x3E; </p><br>
+			<p class="par2">&#x20;&#x3C;head&#x3E; </p><br>
+			<p class="par3">... metadatos </p><br>
+			<p class="par2">&#x3C;/head&#x3E; </p><br>
+			<p class="par2">&#x3C;body&#x3E; </p><br>
+			<p class="par3">... metadatos </p><br>
+			<p class="par2">&#x3C;/body&#x3E; </p><br>
+			<p class="par1">&#x3C;/html&#x3E; </p><br>
 			<!--
 			"   <head>"
 			"      ...metadatos"
@@ -88,7 +92,7 @@
 			<tr><td>figure</td>		<td>Figuras</td></tr>
 			<tr><td>details</td>	<td>Detalles opcionales</td>
 									<td><details> 
-											<sumary> Explicación adicional </sumary>
+											<summary> (Pulse para...) Explicación adicional </summary>
 											El div se utliza para agrupar contenido. 
 											class, id, lang, etc. permiten seleccionar grupos div 
 										</details></td></tr>
@@ -152,7 +156,7 @@
 		 <table>
 			<caption> TABLAS </caption>
 			<tr><th>Elemento</th>	<th>Definición</th></tr>
-			<tr><td>table</th>		<th>Una tabla</td></tr>
+			<tr><td>table</td>		<td>Una tabla</td></tr>
 			<tr><td>caption</td>	<td>Leyenda de la tabla</td></tr>
 			<tr><td>tr</td>			<td>Fila</td></tr>
 			<tr><td>th</td>			<td>Celdade cabecera</td></tr>
@@ -166,7 +170,7 @@
 		</section>
 		
 		<footer>
-			Autor: Enrique Prieto (Agosto 2013)
+			<p>Autor: Enrique Prieto (Agosto 2013)</p>
 		</footer>
 			
 	</body>
