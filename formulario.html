@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulario</title>
+    	<meta name="autor" content="Enrique Prieto" >
+		<link rel="stylesheet" type="text/css" href="css/estilo.css" lang="es">
+		<script src="javascript/codigo.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Formulario</h1>
+		</header>
+		
+		<section id="Personales">	
+			<h3>Datos Personales</h3>
+			<p>Nombre:			<input name=nombre 		required autofocus></p>
+			<p>Apellidos:		<input name=apellido	required></p>
+			<p>F.Nacimiento:	<input name=nacimiento 	type=date ></p>
+			<fieldset required>
+				<legend>Género</legend>
+				<p><input type=radio name=genero>Hombre</p>
+				<p><input type=radio name=genero>Mujer</p>
+			</fieldset>
+			<fieldset required>
+				<legend>Estado civil</legend>
+				<p><input type=radio name=estadoc>Soltero</p>
+				<p><input type=radio name=estadoc>Casado</p>
+				<p><input type=radio name=estadoc>Divorciado</p>
+			</fieldset>
+			<p>NIF: 			<input name=id 			required pattern="\d{7,8}[A-Z]"> 
+			<p>Tlfno: 			<input name=tlfno 		type=tel ></p>
+			<p>Email: 			<input name=email 		type=email></p>
+			<p>Dirección: 		<input name=direccion></p>
+			<p>C.P.: 			<input name=codpost 	pattern="\d{6}"> 
+			<p>Municipio: 		<input name=municipio></p>
+			<p>Provincia: 		<input name=provincia></p>
+			<p>Comentarios:		<br><textarea rows="4" cols="40" name=comentario></textarea></p>
+		</section>
+			
+	</body>
+</html>

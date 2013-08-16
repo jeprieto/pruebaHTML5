@@ -1,250 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Curso HTML5</title>
+		<title>Prueba HTML5</title>
 		<!-- Parece que no muestar bien los caracteres especiales
-			<meta charset = "utf-8"> -->
-		<meta name="autor" content="Enrique Prieto">
+			<meta charset = "utf-8"> 
+			<meta charset="UTF-8"> -->
+    	<meta name="autor" content="Enrique Prieto">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css" >
 		<script src="javascript/codigo.js"></script>
 	</head>
+	
 	<body>
 		<header>
-			<h1>Curso HTML5</h1>
-			<img src="adjuntos/HTML5.jpg" alt="Logo de HTML5">
+			<h1>Prueba HTML5</h1>
+			<p id="LogoCab">
+				<img src="adjuntos/HTML5.jpg" alt="Logo de HTML5"> </p>
 		</header>
 		
-		<section id="Estructura">	
-		 <h3>Estructura</h3>
-			<p class="par1"> &#x3C;html&#x3E; </p><br>
-			<p class="par2">&#x20;&#x3C;head&#x3E; </p><br>
-			<p class="par3">... metadatos </p><br>
-			<p class="par2">&#x3C;/head&#x3E; </p><br>
-			<p class="par2">&#x3C;body&#x3E; </p><br>
-			<p class="par3">... metadatos </p><br>
-			<p class="par2">&#x3C;/body&#x3E; </p><br>
-			<p class="par1">&#x3C;/html&#x3E; </p><br>
-			<!--
-			"   <head>"
-			"      ...metadatos"
-			"   </head>"
-			"   <body>"
-			"      ...contenido"
-			"   </body>"
-			"</html>"
-			-->
+		<section id="Opciones">	
+		 <h3>Opciones</h3>
+			<ol>
+				<li><a href="curso.html">Curso</a></li>
+				<li><a href="formulario.html">Formulario</a></li>
+			</ol>
 		</section>
 			
-		<section id="Cabecera">	
-		 <h3>head </h3>
-		 <p>Especifica metadatos</p>
-		 <table>
-			<caption> CABECERA </caption>
-			<tr><th>Elemento</th>	<th>Definición</th></tr>
-			<tr><td>title</td>		<td>Indica título</td></tr>
-			<tr><td>meta</td>		<td>Permite incorporar metadatos</td></tr>
-			<tr><td>link</td>		<td>Permite enlazar a otros recursos</td></tr>
-			<tr><td>style</td>		<td>Permite incrustar declaraciones de estilo</td></tr>
-			<tr><td>base</td>		<td>Permite especificar la URI de base</td></tr>
-			<tr><td>command</td></tr>	
-			<tr><td>script</td>		<td>Permite añadir interactividad</td></tr>
-			<tr><td>noscript</td></tr>
-		 </table>
-		</section>
-		
-		<section id="Cuerpo">
-		 <h3>Cuerpo</h3>
-		 <table>
-			<caption> CUERPO </caption>
-			<tr><th>Elemento</th>	<th>Definición</th></tr>
-			<tr><td>body</td>		<td>Especifica el contenido del documento</td></tr>
-			<tr><td>Elementod de Estructura</td>	
-									<td> Para establecer la estructura semática del documento</td></tr>
-			<tr><td>hi, h2,...h6</td>	
-									<td>Títulos</td></tr>
-			<tr><td>div</td>		<td>Agrupa elementos de contenido</td></tr>
-			<tr><td>sectión</td>	<td>Sección, puede incluir encabezados</td></tr>
-			<tr><td>article</td>	<td>Artículo</td></tr>
-			<tr><td>hgroup</td>		<td>Grupo de cabecera</td></tr>
-			<tr><td>nav</td>		<td>Listas de navegación</td></tr>
-			<tr><td>aside</td>		<td>Contenido auxiliar</td></tr>
-			<tr><td>header</td>		<td>Cabecera</td></tr>
-			<tr><td>footer</td>		<td>Pie</td></tr>
-			<tr><td>address</td>	<td>Define datos de contacto</td></tr>
-			<tr><td>figure</td>		<td>Figuras</td></tr>
-			<tr><td>details</td>	<td>Detalles opcionales</td>
-									<td><details> 
-											<summary> (Pulse para Explicación adicional) </summary>
-											El div se utliza para agrupar contenido. 
-											class, id, lang, etc. permiten seleccionar grupos div 
-										</details></td></tr>
-		 </table>	
-		</section>	
-		
-		<section id="Agrupacion">
-		 <h3> Agrupacion </h3>
-		 <table>
-			<caption> AGRUPACION </caption>
-			<tr><th>Elemento</th>		<th>Definición</th>		<th>Ejemplo</th></tr></tr>	
-			<tr><td>p</td>				<td>párrafo.</td></tr>
-			<tr><td>ol, ul, li</td>		<td>listas de ítems</td><td><details> 
-											<summary> (Pulse para Ejemplo de listas) </summary>
-											ol<br>
-											<ol>
-											<li>primero</li>
-											<li>segundo</li>
-											</ol>
-											ul<br>
-											<ul>
-											<li>primero</li>
-											<li>segundo</li>
-											</ul>
-										</details></td></tr>
-			<tr><td>dt,dl,dd</td>		<td>definiciones</td></tr>
-			<tr><td>pre</td> 			<td>texto preformateado</td></tr>
-			<tr><td>blockquote</td>		<td>contenido extraido de otra fuente</td></tr>
-			<tr><td>figure</td>			<td>representa el contenido</td></tr>
-			<tr><td>figcaption</td>		<td>representa la leyenda de la figura</td></tr>
-			<tr><td>details</td>		<td>Contenido que pues estar oculto</td></tr>
-		 </table>	
-		</section>
-		
-		<section id=Textuales>
-		 <h3> Elementos textuales </h3>
-		 <table>
-			<caption> ELEMENTOS TEXTUALES </caption>
-			<tr><th>Elemento</th>	<th>Definición</th>			<th>Ejemplo</th></tr>
-			<tr><td>em</td>			<td>Énfasis</td>			<td>Esta bebida me parece <em>espectacular"</em></td></tr>
-			<tr><td>strong</td>		<td>Importante</td>			<td>La leche está <strong>muy caliente</strong></td></tr>
-			<tr><td>small</td>		<td>No importante</td>		<td>Tome Exidina <small>Este medicamento...</small></td></tr>
-			<tr><td>s</td>			<td>Incorrecto</td>			<td>Precio: <s>10 euros</s>. 9,95 euros</td></tr>
-			<tr><td>cite</td>		<td>Títulos de obras</td>	<td>En <cite>El Quijote</cite> hay 2 protagonistas.</td></tr>
-			<tr><td>q</td>			<td>Citas</td>				<td>Juan dijo <q>Bien predica quien bien vive</td></tr>
-			<tr><td>abbr</td>		<td>Abreviación</td>		<td>Un <dfn>catamorfismo</dfn>es un tipo de functor</td></tr>
-			<tr><td>span</td>		<td>Texto diferente</td>	<td>Castillo en francés es <spanlang="fr">château</span></td></tr>
-			<tr><td>br</td>			<td>Salto de línea</td>		<td>C/Valdés Salas, S/N<br>Oviedo<br>España</td></tr>
-			<tr><td>wbr</td>		<td>Posible salto</td>		<td>super<wbr>cali<wbr>frasti<wbr>listico.com</td></tr>
-			<tr><td>code</td>		<td>Código</td>				<td><code>checkDB</code> chequea la base de datos.</td></tr>
-			<tr><td>var</td>		<td>Variable</td>			<td>Sea <var>n </var>el número de personas, ...</td></tr>
-			<tr><td>samp</td>		<td>Muestra, Salida</td>	<td>La salida es: <samp>Syntax error</samp></td></tr>
-			<tr><td>kbd</td>		<td>Entrada teclado</td>	<td>Pulse <kbd>F1</kbd> para obtener ayuda</td></tr>
-			<tr><td>sub</td>		<td>Subíndice</td>			<td>El agua es H<sub>2</sub>O</td></tr>
-			<tr><td>sup</td>		<td>Superíndice</td>		<td>El cuadrado es <var>x<sup>2</sup></var></td></tr>
-			<tr><td>i</td>			<td>Voz alternativa</td>	<td>Es un <i>poquillo</i> trasto</td></tr>
-			<tr><td>b</td>			<td>Palabras clave</td>		<td>Contiene <b>salmón</b>y <b>tomate</b></td></tr>
-			<tr><td>u</td>			<td>Anotaciones</td>		<td>Escribe <u>lopo</u> en vez de lobo</td></tr>
-			<tr><td>ins</td>		<td>Texto insertado</td>	<td><ins>Texto insertado</ins></td></tr>
-			<tr><td>del</td>		<td>Texto borrado</td>		<td><del>Texto eliminado</del></td></tr>
-			<tr><td>mark</td>		<td>Texto Resaltado<br> Ej. tras una búsqueda</td>	<td>El <mark>lobo</mark> ibérico.<br>Los <mark>lobo</mark>s son animales</td></tr>
-			<tr><td>data</td>		<td>Dato</td>				<td>Juan sacó un <datavalue="10">diez</data>.</td></tr>
-			<tr><td>time</td>		<td>Evento temporal <br>datetime indica instante</td>	
-																<td>Nos vemos el <timedatetime="2012-04-01">sábado</time></td></tr>
-		 </table>
-		</section>
-		
-		<section id=Tablas>
-		 <h3> Tablas </h3>
-		 <table>
-			<caption> TABLAS </caption>
-		  <tfoot>
-			<tr><td>Pie de tabla</td></tr>
-		  </tfoot>
-		  <thead>
-			<tr><th>Elemento</th>	<th>Definición</th></tr>
-		  </thead>
-		  <tbody>
-			<tr><td>table</td>		<td>Una tabla</td></tr>
-			<tr><td>caption</td>	<td>Leyenda de la tabla</td></tr>
-			<tr><td>tr</td>			<td>Fila</td></tr>
-			<tr><td>th</td>			<td>Celda de cabecera</td></tr>
-			<tr><td>td</td>			<td>Celda de datos</td></tr>
-			<tr><td>colgroup</td>	<td>Grupo de columnas</td></tr>
-			<tr><td>col</td>		<td>Representa una columna dentro de un colgroup</td></tr>
-			<tr><td>tbody</td>		<td>Cuerpo de la tabla</td></tr>
-			<tr><td>thead</td>		<td>Cabecera de la tabla</td></tr>
-			<tr><td>tfoot</td>		<td>Pie de tabla</td></tr>
-		  </tbody>
-		 </table>
-		</section>
-
-		<section id=Incrustado>
-		 <h3> Contenido Incrustado </h3>
-		 <table>
-			<caption> CONTENIDO INCRUSTADO </caption>
-			<tr><th>Elemento</th>	<th>Definición</th>	<th>Ejemplo</th></tr>
-			<tr><td>img</td>		<td>Imagen</td>		<td><img src="adjuntos/HTML5.jpg" alt="Logotipo HTML5"></td></tr>
-			<tr><td>audio</td>		<td>Audio</td>		<td><audio src="adjuntos/Flash.mp3" controls ></td></tr>
-			<tr><td>video</td>		<td>Vídeo</td>		<td><video src="adjuntos/Oso.mp4" controls autoplay loop></td></tr>
-			<tr><td>object</td>		<td>Objeto</td>		<td>&#x3C;object data="juego.swf" &#x3E;</td></tr>
-			<tr><td>iframe</td>		<td>Página</td>		<td>&#x3C;iframe src="http://www.uniovi.es" &#x3E;</td></tr>
-			<tr><td>map/area</td>	<td>Mapa</td>		<td>&#x3C;map name="cosas"&#x3E;<br>
-															&#x3C;area shape="rect"coords="0,0,82,126"
-																  alt="casa" href="casa.htm"/&#x3E;<br>
-															&#x3C;area shape="circle"coords="90,58,3"
-																  alt="bola"href="bola.html"/&#x3E;<br>
-															&#x3C;/map&#x3E;</td></tr>
-		 </table>
-		</section>
-
-		<section id=Globales>
-		 <h3> Atributos globales HTML</h3>
-		 <table>
-			<caption> ATRIBUTOS GLOBALES </caption>
-			<tr><th>Elemento</th>	<th>Definición</th>			<th>Ejemplo</th></tr>
-			<tr><td>class</td>		<td>Clase</td>				<td>&#x3C;div class="Anuncio"&#x3E;. . .&#x3C;/div&#x3E;</td></tr>
-			<tr><td>id</td>			<td>Identificador único</td><td>&#x3C;article id="r23"&#x3E;. . .&#x3C;/article&#x3E;</td></tr>
-			<tr><td>title</td>		<td>Título</td>				<td>Texto &#x3C;span title="verdoso"&#x3E;verde&#x3C;/span&#x3E;</td></tr>
-			<tr><td>style</td>		<td>Información de estilo</td>
-																<td>Texto &#x3C;span style="color: green"&#x3E;verde&#x3C;/span&#x3E;</td></tr>
-			<tr><td>accesskey</td>	<td>Atajo de teclado</td>	<td>&#x3C;a accesskey=B>Búsqueda&#x3C;/a&#x3E;</td></tr>
-			<tr><td>tabindex</td>	<td>Navegación mediante tabulación</td>
-																<td>&#x3C;a href="about.html" tabindex="2"&#x3E;Acerca&#x3C;/a&#x3E;<br>
-																	&#x3C;a href="mapa.html" tabindex="1"&#x3E;Mapa&#x3C;/a&#x3E;</td></tr>
-			<tr><td>contenteditable</td><td>Indica si el elemento puede editarse</td>
-																<td>Nombre:
-																	&#x3C;span contenteditable&#x3E;Juan&#x3C;/span&#x3E;</td></tr>
-			<tr><td>contextmenu</td><td>Muestra menú contextual</td>
-																<td>&#x3C;input id=genero contextmenu=genero&#x3E;</td></tr>
-			<tr><td>hidden</td>		<td>Elemento no relevante</td>	
-																<td>&#x3C;section id=juego hidden&#x3E;. . . &#x3C;/section&#x3E;</td></tr>
-			<tr><td>spellcheck</td>	<td>Habilitarcorrector ortográfico</td>	
-																<td>Nombre:
-																	&#x3C;input id=nombre spellcheck=no&#x3E;</td></tr>
-			<tr><td>translate</td>	<td>Traducir o no una cadena</td>
-																<td>Pulsar &#x3C;span translate=no&#x3E;CONTINUE&#x3C;/span&#x3E;<br>
-																	en panel de impresora.</td></tr> 
-			<tr><td>data-*</td>		<td>Atributos definidos por el usuario</td>	
-																<td>&#x3C;p data-calorias="50"&#x3E;kiwi&#x3C;/p&#x3E;</td></tr>
-		 </table>
-		</section>
-		
-		<section id=Internacionalizacion>
-		 <h3> Internacionalización</h3>
-		 <table>
-			<caption> INTERNACIONALIZACIÓN </caption>
-			<tr><th>Elemento</th>	<th>Definición</th>			<th>Ejemplo</th></tr>
-			
-			<tr><td>charset</td>	<td>Codificación</td>		<td>&#x3C;meta charset="utf-8"&#x3E;</td></tr>
-			<tr><td>lang<br>
-					xml:lang</td>	<td>Idioma<br>
-										en,es,en-US,...</td>	<td>&#x3C;p lang="es"&#x3E; Castillo en francés se escribe<br>
-																	&#x3C;span lang="fr"&#x3E;château&#x3C;/span&#x3E;<br>
-																	&#x3C;/p&#x3E;</td></tr>
-			<tr><td>hreflang</td>	<td>Idioma de un enlace</td><td>&#x3C;a href="chateaus.html" hreflang="fr"&#x3E;<br>
-																		Lista de castillos franceses&#x3C;/a&#x3E;</td></tr>
-			<tr><td>translate</td>	<td>Traducir un texto o no</td>
-																<td>Pulsar &#x3C;span translate=no&#x3E;CONTINUE&#x3C;/span&#x3E;<br>
-																	en panel de impresora.</td></tr>		
-			<tr><td>ruby,<br>
-					rt, rp</td>	<td>Anotaciones fonéticas habituales<br>
-									 en textos asiáticos</td>	<td>&#x3C;ruby&#x3E;...&#x3C;rt&#x3E;...&#x3C;/rt&#x3E;...&#x3C;rt&#x3E;...&#x3C;/rt&#x3E;&#x3C;/ruby&#x3E;</td></tr>
-			<tr><td>bdi</td>	<td>Aislar direccionalidad del texto</td>
-																<td>Usuario &#x3C;bdi&#x3E;... &#x3C;/bdi&#x3E;: 3artículos</td></tr>
-			<tr><td>bdo</td>	<td>Formatear direccionalidad del texto</td>	
-																<td>Castillo al revés es <bdo dir=rtl>Castillo</bdo></td></tr>
-		 </table>
-		</section>
-		
 		<footer>
 			<p>Autor: Enrique Prieto (Agosto 2013)</p>
 		</footer>
