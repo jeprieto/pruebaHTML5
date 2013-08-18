@@ -5,6 +5,7 @@
     	<meta name="autor" content="Enrique Prieto" >
 		<link rel="stylesheet" type="text/css" href="css/estilo.css" lang="es">
 		<script src="javascript/codigo.js"></script>
+		
 	</head>
 	
 	<body>
@@ -13,10 +14,12 @@
 		</header>
 		
 		<section id="Personales">	
-			<h3>Datos Personales</h3>
+		  <h3>Datos Personales</h3>
+		  <form method="post"
+				action="curso.html">
 			<p>Nombre:			<input name=nombre 		required autofocus></p>
 			<p>Apellidos:		<input name=apellido	required></p>
-			<p>F.Nacimiento:	<input name=nacimiento 	type=date ></p>
+			<p>F.Nacimiento:	<input name=nacimiento 	type=date></p>
 			<fieldset required>
 				<legend>Género</legend>
 				<p><input type=radio name=genero>Hombre</p>
@@ -32,10 +35,12 @@
 			<p>Tlfno: 			<input name=tlfno 		type=tel ></p>
 			<p>Email: 			<input name=email 		type=email></p>
 			<p>Dirección: 		<input name=direccion></p>
-			<p>C.P.: 			<input name=codpost 	pattern="\d{6}"> 
+			<p>C.P.: 			<input name=codpost 	pattern="\d{5}"> 
 			<p>Municipio: 		<input name=municipio></p>
 			<p>Provincia: 		<input name=provincia></p>
 			<p>Comentarios:		<br><textarea rows="4" cols="40" name=comentario></textarea></p>
+			<p><button>Enviar</button></p>
+		  </form>
 		</section>
 			
 	</body>
